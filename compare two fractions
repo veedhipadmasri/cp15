@@ -1,0 +1,11 @@
+class Solution:
+    def compareFrac(self,str):
+        str=str.split(",")
+        fr1=eval (str[0])
+        fr2=eval (str[1])
+        if fr1==fr2:
+            return "equal"
+        if fr1>fr2:
+            return str[0].strip(" ")
+        return str[1].strip(" ")
+      
